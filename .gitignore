@@ -126,7 +126,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+# .env # ! UNCOMMET FOR PRODUCTION MODE 
 .venv
 env/
 venv/
