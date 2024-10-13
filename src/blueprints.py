@@ -55,3 +55,26 @@ def __bp_name__():
         str: A unique 12-character string.
     """
     return uuid.uuid4().hex[:12]
+
+
+def __bp_prefix__(file_path):
+    """
+    Returns the relative directory path of the given file, starting from the 'router' directory.
+
+    Args:
+        file_path (str): The absolute path of the file.
+
+    Returns:
+        str: The relative directory path starting from the 'router' directory, with forward slashes.
+    """
+    current_directory = os.path.dirname(os.path.abspath(file_path))
+    base_directory = os.path.dirname(
+        os.path.dirname(os.path.dirname(current_directory))
+    )
+    relative_path = os.path.relpath(current_directory, base_directory)
+    # Find the position of 'router' and remove everything before it
+    if "router" in relative_path:
+        relative_path = relative_path.split("router", 1)[-1]
+    retorno = "/" + relative_path
+
+    return retorno.lstrip("/").replace("\\", "/")
