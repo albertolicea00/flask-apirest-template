@@ -1,4 +1,5 @@
-Flask API Server Template: A streamlined template for quickly setting up a Flask-based server. Includes essential configurations, **CORS** setup, blueprint registration, and **Swagger integration** for API documentation. Features a **folder-based routing system** and a **scalable architectur**e, making it ideal for building and maintaining **RESTful APIs**. Additionally, it includes extra functions like **serializers** to convert objects into simple returnable JSONs.
+# Flask API Server Template 🚀
+A streamlined template for quickly setting up a Flask-based server. Includes essential configurations, **CORS** setup, blueprint registration, and **Swagger integration** for API documentation. Features a **folder-based routing system** and a **scalable architectur**e, making it ideal for building and maintaining **RESTful APIs**. Additionally, it includes extra functions like **serializers** to convert objects into simple returnable JSONs.
 
 ## 🌳 File Structure
 
